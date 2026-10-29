@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exclusive | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="figma.css">
+  
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">Shop Now</a></p>
+    <select aria-label="Language"><option>English</option><option>French</option></select>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header_inner">
+      <a href="#" class="logo">Exclusive</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="figmasign.html">Sign Up</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search" onsubmit="return false">
+          <input type="text" placeholder="What are you looking for?" aria-label="Search">
+          <i class="bi bi-search search_button"></i>
+        </form>
+        <a href="#" aria-label="Wishlist"><i class="bi bi-heart bit"></i></a>
+        <a href="#" aria-label="Cart"><i class="bi bi-cart3"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <ul class="side-cats">
+        <li><a href="#" class="woman"> 
+            <div class="woman_t">Woman’s Fashion</div>
+            <i class="bi bi-chevron-right woman_icon"></i>
+        </a></li>
+        <li><a href="#" class="man"> 
+            <div class="man_t">Men’s Fashion</div>
+            <i class="bi bi-chevron-right man_icon"></i>
+        </a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Home &amp; Lifestyle</a></li>
+        <li><a href="#">Medicine</a></li>
+        <li><a href="#">Sports &amp; Outdoor</a></li>
+        <li><a href="#">Baby’s &amp; Toys</a></li>
+        <li><a href="#">Groceries &amp; Pets</a></li>
+        <li><a href="#">Health &amp; Beauty</a></li>
+      </ul>
+      <div class="banner">
+        <div class="banner-text">
+          <p class="banner-brand">
+            <img class="apple" src="uberapples.jpg" alt=""> iPhone 14 Series
+        </p>
+          <h1>Up to 10% off Voucher</h1>
+          <a href="#" class="link-arrow">Shop Now 
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <img class="banner-img" src="14pro.png" alt="iPhone 14 Pro">
+        <div class="dots" id="dots"><span class="on"></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <!-- Flash sales -->
+    <section class="container section">
+      <div class="label"><i></i>Today’s</div>
+      <div class="section-head">
+        <h2>Flash Sales</h2>
+        <div class="timer" id="timer">
+          <div><small>Days</small><b id="d">03</b></div><span>:</span>
+          <div><small>Hours</small><b id="h">23</b></div><span>:</span>
+          <div><small>Minutes</small><b id="m">19</b></div><span>:</span>
+          <div><small>Seconds</small><b id="s">56</b></div>
+        </div>
+        <div class="arrows">
+            <button class="arrow" data-scroll="flash" data-dir="-1" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+            <button class="arrow" data-scroll="flash" data-dir="1" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="row-scroll" id="flash"></div>
+      <div class="center"><a href="#" class="btn">View All Products</a></div>
+    </section>
+
+    <!-- Categories -->
+    <section class="container section">
+      <div class="label"><i></i>Categories</div>
+      <div class="section-head">
+        <h2>Browse By Category</h2>
+        <div class="arrows"><button class="arrow" aria-label="Previous">←</button><button class="arrow" aria-label="Next">→</button></div>
+      </div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <!-- Best selling -->
+    <section class="container section">
+      <div class="label"><i></i>This Month</div>
+      <div class="section-head">
+        <h2>Best Selling Products</h2>
+        <a href="#" class="btn small">View All</a>
+      </div>
+      <div class="grid4" id="best"></div>
+    </section>
+
+    <!-- Music banner -->
+    <section class="container section">
+      <div class="music">
+        <div>
+          <p class="green">Categories</p>
+          <h2>Enhance Your Music Experience</h2>
+          <div class="count" id="mcount">
+            <div><b>23</b><small>Hours</small></div>
+            <div><b>05</b><small>Days</small></div>
+            <div><b>59</b><small>Minutes</small></div>
+            <div><b>35</b><small>Seconds</small></div>
+          </div>
+          <a href="#" class="btn green-btn">Buy Now!</a>
+        </div>
+        <img class="music-img" src="assets/jbl.png" alt="JBL speaker">
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="container section">
+      <div class="label"><i></i>Our Products</div>
+      <div class="section-head">
+        <h2>Explore Our Products</h2>
+        <div class="arrows"><button class="arrow" aria-label="Previous">←</button><button class="arrow" aria-label="Next">→</button></div>
+      </div>
+      <div class="grid4" id="explore"></div>
+      <div class="center"><a href="#" class="btn">View All Products</a></div>
+    </section>
+
+    <!-- New arrival -->
+    <section class="container section">
+      <div class="label"><i></i>Featured</div>
+      <div class="section-head"><h2>New Arrival</h2></div>
+      <div class="arrival">
+        <article class="tile big"><img src="assets/ps4.png" alt=""><div><h3>PlayStation 5</h3><p>Black and White version of the PS5 coming out on sale.</p><a href="#">Shop Now</a></div></article>
+        <article class="tile wide"><img src="assets/woman.png" alt=""><div><h3>Women’s Collections</h3><p>Featured woman collections that give you another vibe.</p><a href="#">Shop Now</a></div></article>
+        <article class="tile"><img src="assets/speakers.png" alt=""><div><h3>Speakers</h3><p>Amazon wireless speakers</p><a href="#">Shop Now</a></div></article>
+        <article class="tile"><img src="assets/perf.png" alt=""><div><h3>Perfume</h3><p>GUCCI INTENSE OUD EDP</p><a href="#">Shop Now</a></div></article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="container services">
+      <div><span>🚚</span><h4>FREE AND FAST DELIVERY</h4><p>Free delivery for all orders over $140</p></div>
+      <div><span>🎧</span><h4>24/7 CUSTOMER SERVICE</h4><p>Friendly 24/7 customer support</p></div>
+      <div><span>✅</span><h4>MONEY BACK GUARANTEE</h4><p>We return money within 30 days</p></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>
+        <h3>Exclusive</h3>
+        <h4>Subscribe</h4><p class="muted">Get 10% off your first order</p>
+        <form onsubmit="return false" class="sub"><input type="email" placeholder="Enter your email" aria-label="Email"><button aria-label="Subscribe">➤</button></form></div>
+      <div><h4>Support</h4><p class="muted">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p><p class="muted">exclusive@gmail.com</p><p class="muted">+88015-88888-9999</p></div>
+      <div><h4>Account</h4><a href="#">My Account</a><a href="#">Login / Register</a><a href="#">Cart</a><a href="#">Wishlist</a><a href="#">Shop</a></div>
+      <div><h4>Quick Link</h4><a href="#">Privacy Policy</a><a href="#">Terms Of Use</a><a href="#">FAQ</a><a href="#">Contact</a></div>
+      <div>
+        <h4>Download App</h4><p class="muted tiny">Save $3 with App New User Only</p>
+        <div class="apps">
+          <img src="assets/qrcode.png" alt="QR code">
+        <div>
+          <img src="assets/google.png" alt="Get it on Google Play">
+          <img src="assets/apple.png" alt="Download on the App Store">
+        </div>
+      </div> 
+      <div class="social"><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div>
+    </div>
+    <p class="copy">© Copyright Exclusive 2026. All rights reserved</p>
+  </footer>
+
+  <script src="figma.js"></script>
+</body>
+</html>
