@@ -36,6 +36,9 @@ function cardHTML(p, inline) {
               : p.badge ? `<span class="badge new">${p.badge}</span>` : "";
   const old = p.old ? `<s>$${p.old}</s>` : "";
   const sw = p.sw ? `<div class="sw">${p.sw.map((c) => `<i style="background:${c}"></i>`).join("")}</div>` : "";
+  const title = p.name === "HAVIT HV-G92 Gamepad"
+    ? `<a href="storefront/product-details.html">${p.name}</a>`
+    : p.name;
   return `
     <article class="card">
       <div class="img">
@@ -44,7 +47,7 @@ function cardHTML(p, inline) {
         <img src="assets/${p.img}.png" alt="${p.name}">
         <button class="add">Add To Cart</button>
       </div>
-      <h3>${p.name}</h3>
+      <h3>${title}</h3>
       <div class="meta ${inline ? "inline" : ""}"><span class="price">$${p.price}${old}</span>
       <span class="stars" aria-label="${p.stars} out of 5">${starText(p.stars)}<em>(${p.n})</em></span></div>
       ${sw}

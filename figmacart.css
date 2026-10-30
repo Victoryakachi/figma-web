@@ -66,6 +66,10 @@ body{
 .icons{
     margin-top: 25px;
 }
+.icons a{
+    color: inherit;
+    text-decoration: none;
+}
 .morphin{
     margin-left: 25px;
     display: flex;
