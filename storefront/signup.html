@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Account | Exclusive</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header class="account-header">
+    <a class="account-brand" href="../index.html">Exclusive</a>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </header>
+
+  <main class="account-main">
+    <section class="account-promo">
+      <p class="eyebrow">Join Exclusive</p>
+      <h1>Make room for things you love.</h1>
+      <p>Create an account to save your favorites, check out faster, and keep up with your orders.</p>
+    </section>
+
+    <section class="account-form-wrap">
+      <h2>Create your account</h2>
+      <p class="account-intro">A few details and you're ready to go.</p>
+      <form class="account-form" data-account-form>
+        <label class="account-field">
+          Name
+          <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+        </label>
+        <label class="account-field">
+          Email address
+          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        </label>
+        <label class="account-field">
+          Password
+          <input type="password" name="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required>
+        </label>
+        <button class="account-submit" type="submit">Create Account</button>
+        <p class="account-status" data-account-status></p>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <footer class="account-footer">
+    <p>© Copyright Exclusive 2026. All rights reserved.</p>
+  </footer>
+  <script src="account.js"></script>
+</body>
+</html>
