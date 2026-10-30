@@ -9,32 +9,32 @@
 <body>
   <header class="account-header">
     <a class="account-brand" href="../index.html">Exclusive</a>
-    <p>New to Exclusive? <a href="signup.html">Create an account</a></p>
+    <p>New to Exclusive? <a href="../figmasign.html">Create an account</a></p>
   </header>
 
   <main class="account-main">
-    <section class="account-promo">
-      <p class="eyebrow">Welcome back</p>
-      <h1>Your favorites are waiting.</h1>
-      <p>Log in to continue shopping, keep track of your orders, and manage your wishlist.</p>
+    <section class="account-image">
+      <img src="media/loginandsignuppic.jpg" alt="Phone, shopping cart, and shopping bags">
     </section>
 
     <section class="account-form-wrap">
       <h2>Log in to Exclusive</h2>
-      <p class="account-intro">Enter your details below to access your account.</p>
+      <p class="account-intro">Enter your details below</p>
       <form class="account-form" data-account-form>
         <label class="account-field">
-          Email address
-          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          <span class="visually-hidden">Email or phone number</span>
+          <input type="text" name="email" autocomplete="username" placeholder="Email or Phone Number" required>
         </label>
         <label class="account-field">
-          Password
-          <input type="password" name="password" autocomplete="current-password" placeholder="Enter your password" required>
+          <span class="visually-hidden">Password</span>
+          <input type="password" name="password" autocomplete="current-password" placeholder="Password" required>
         </label>
-        <button class="account-submit" type="submit">Log In</button>
+        <div class="account-login-actions">
+          <button class="account-submit" type="submit">Log In</button>
+          <a href="mailto:exclusive@gmail.com?subject=Password%20reset%20request">Forget Password?</a>
+        </div>
         <p class="account-status" data-account-status></p>
       </form>
-      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
     </section>
   </main>
 

@@ -100,7 +100,10 @@ input {
 /* SHOPPING IMAGE */
 .hero-image {
     width: 100%;
+    min-height: 480px;
     overflow: hidden;
+    display: grid;
+    place-items: center;
     background: #cfe8ec;
 }
 
@@ -108,7 +111,7 @@ input {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* SIGNUP FORM */
@@ -345,6 +348,14 @@ input {
         min-height: auto;
         padding: 30px 5% 60px;
         gap: 30px;
+    }
+
+    .hero-image img {
+        max-height: 480px;
+    }
+
+    .hero-image {
+        min-height: 0;
     }
 
     .ft-grid {

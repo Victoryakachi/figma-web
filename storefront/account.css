@@ -50,122 +50,121 @@ input {
 }
 
 .account-main {
-  width: min(100% - 48px, 1000px);
-  min-height: 650px;
-  margin: 56px auto 80px;
+  width: min(100% - 48px, 1170px);
+  min-height: 580px;
+  margin: 40px auto 72px;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   overflow: hidden;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
-.account-promo {
-  padding: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #db4444;
-  color: #fff;
+.account-image {
+  min-width: 0;
+  min-height: 580px;
+  display: grid;
+  place-items: center;
+  background: #cfe8ec;
 }
 
-.account-promo .eyebrow {
-  margin: 0 0 16px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
-.account-promo h1 {
-  margin: 0 0 18px;
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 1.12;
-}
-
-.account-promo > p:last-child {
-  max-width: 340px;
-  margin: 0;
-  color: #fff2f2;
-  font-size: 15px;
-  line-height: 1.8;
+.account-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .account-form-wrap {
-  padding: 64px clamp(28px, 6vw, 76px);
+  min-width: 0;
+  padding: 48px clamp(28px, 5vw, 68px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .account-form-wrap h2 {
-  margin: 0 0 8px;
-  font-size: 28px;
-  font-weight: 600;
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 400;
 }
 
 .account-intro {
-  margin: 0 0 30px;
-  color: #666;
-  font-size: 14px;
+  margin: 0 0 28px;
+  color: #333;
+  font-size: 13px;
 }
 
 .account-form {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .account-field {
-  display: grid;
-  gap: 7px;
-  font-size: 13px;
-  font-weight: 500;
+  display: block;
 }
 
 .account-field input {
   width: 100%;
-  min-height: 48px;
-  padding: 0 14px;
-  border: 1px solid #d6d6d6;
-  border-radius: 6px;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid #aaa;
   outline: none;
   background: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .account-field input:focus {
-  border-color: #db4444;
-  box-shadow: 0 0 0 3px rgba(219, 68, 68, 0.12);
+  border-bottom: 2px solid #111;
+}
+
+.account-login-actions {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .account-submit {
-  min-height: 50px;
-  margin-top: 6px;
+  min-width: 92px;
+  min-height: 44px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #db4444;
   color: #fff;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .account-submit:hover {
   background: #c93434;
 }
 
+.account-login-actions a {
+  color: #db4444;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.account-login-actions a:hover {
+  text-decoration: underline;
+}
+
 .account-status {
   min-height: 20px;
-  margin: 0;
+  margin: -12px 0 0;
   color: #666;
   font-size: 12px;
   line-height: 1.6;
 }
 
-.auth-switch {
-  margin: 18px 0 0;
-  color: #666;
-  font-size: 13px;
-  text-align: center;
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .account-footer {
@@ -195,23 +194,19 @@ input {
   }
 
   .account-main {
-    width: min(100% - 32px, 480px);
+    width: min(100% - 32px, 560px);
     min-height: 0;
     margin: 32px auto 48px;
     grid-template-columns: 1fr;
   }
 
-  .account-promo {
-    min-height: 210px;
-    padding: 30px;
+  .account-image img {
+    height: auto;
+    min-height: 0;
   }
 
-  .account-promo h1 {
-    font-size: 34px;
-  }
-
-  .account-promo > p:last-child {
-    font-size: 14px;
+  .account-image {
+    min-height: 0;
   }
 
   .account-form-wrap {
@@ -235,5 +230,10 @@ input {
 
   .account-main {
     width: calc(100% - 24px);
+  }
+
+  .account-form-wrap {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
